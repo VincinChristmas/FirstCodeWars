@@ -1,3 +1,25 @@
+
+
+// NUMBER FOUR!!!!!!
+//This is an 8kyu kata problem
+/*
+Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
+
+Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).
+
+The string will always start with a letter and will never be empty.
+
+Examples:
+*/
+//my soulution
+function capitalizeWord(word) {
+  let newChar = word[0].toUpperCase() + word.slice(1);
+
+  return newChar;
+}
+
+
+// NUMBER THREE !!!!!!
 //8kyu kata
 //The problem: 
 /*
@@ -27,6 +49,8 @@ function defineSuit(card) {
 }
 
 
+
+// NUMBER TWO!!!!!!
 //THIS IS AN 8 KYU KATA
 
 // Convert boolean values to strings 'Yes' or 'No'.
@@ -55,6 +79,7 @@ function boolToWord( bool ){
   }
 
 
+// NUMBER ONE !!!!!!
 //This is an 8kyu kata
 //Beginner Series #1 School Paperwork
 
