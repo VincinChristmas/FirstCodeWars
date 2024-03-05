@@ -1,3 +1,23 @@
+//NUMBER SEVEN!!!!!!
+/*
+
+Your job is simple, if x squared is more than 1000, return It's 
+hotter than the sun!!, else, return Help yourself to a honeycomb Yorkie for the glovebox.
+
+Note: Input will either be a positive integer (or a string for untyped languages).
+*/
+
+//MY SOLUTION:
+function apple(x){
+  if ((x ** 2) > 1000) {
+    return "It's hotter than the sun!!"
+  } else {
+    return "Help yourself to a honeycomb Yorkie for the glovebox."
+  }
+
+}
+
+
 //NUMBER SIX!!!!!!
 //This is an 8kyu kata string problem
 /*
