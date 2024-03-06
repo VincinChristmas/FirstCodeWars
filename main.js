@@ -1,3 +1,31 @@
+//NUMBER 9 !!!!!
+//This is an 8kyu kata
+/*
+Remove an exclamation mark from the end of a string. For a beginner kata, you can 
+assume that the input data is always a string, no need to verify it.
+
+Examples
+"Hi!"     ---> "Hi"
+"Hi!!!"   ---> "Hi!!"
+"!Hi"     ---> "!Hi"
+"!Hi!"    ---> "!Hi"
+"Hi! Hi!" ---> "Hi! Hi"
+"Hi"      ---> "Hi"
+*/
+
+
+//MY SOLUTION
+function remove (string) {
+  //coding and coding...
+  let procedure = string.split('')
+    for (let i = procedure.length-1; i >= 0; i--) {
+      if  (procedure[procedure.length-1] === '!') {
+        procedure.pop()
+      }
+      return procedure.join("")
+    }
+
+
 //NUMBER 8 !!!!!
 /*This kata is about multiplying a given number by eight 
 if it is an even number and by nine otherwise.
