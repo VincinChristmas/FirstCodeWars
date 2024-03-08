@@ -1,3 +1,59 @@
+//NUMBER 11!!!
+//This is an 8KYU Kata
+/*
+For every good kata idea there seem to be quite a few bad ones!
+
+In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. 
+If there are one or two good ideas, 
+return 'Publish!', if there are more than 2 return 'I smell a series!'.
+ If there are no good ideas, as is often the case, return 'Fail!'.
+*/
+
+//MY SOLUTION
+function well(x){
+  let goodSum = 0;
+  let badSum = 0;
+  
+  for (let i = 0; i <= x.length; i++) {
+    if (x[i] === 'good') {
+      goodSum = goodSum + 1
+    } 
+    else if (x[i] === 'bad') {
+      badSum = badSum + 1
+    }
+    
+  }
+  
+  if (goodSum == 1 || goodSum == 2) {
+      return 'Publish!'
+    } else if (goodSum > 2) {
+      return 'I smell a series!'
+    } else if (goodSum == 0) {
+      return 'Fail!'
+    }
+
+}
+
+//NUMBER 10!!!
+//THIS IS AN 8KYU KATA
+/*
+//Simple Comparison?
+Write a function that will compare two values, one will be a number and one will be a string. 
+Return true if they are the same character (regardless of their different data types) and return false if they are not.
+
+To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built
+ in methods including .toString(), .join(), .split(), parseInt and .Number().
+*/
+//MY SOLUTION
+function add(a, b){
+	// code here
+  if (a == b) {
+    return true
+  } else {
+    return false
+  }
+}
+
 //NUMBER 9 !!!!!
 //This is an 8kyu kata
 /*
