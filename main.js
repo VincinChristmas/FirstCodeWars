@@ -1,3 +1,30 @@
+//NUMBER 12 !!!
+/*
+Given a string of digits, you should replace any digit below 5 with '0' 
+and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+
+*/
+
+//MY SOULUTION
+function fakeBin(x){
+  let newDigits = x.split('');
+  
+  for (let i = 0; i <= newDigits.length; i++) {
+    if (Number(newDigits[i]) < 5) {
+      newDigits[i] = 0
+    } else if (Number(newDigits[i]) >= 5) {
+      newDigits[i] = 1
+    }
+    
+  }
+  return newDigits.join('')
+}
+
+//This is an 8kyu kata
+
+
 //NUMBER 11!!!
 //This is an 8KYU Kata
 /*
