@@ -1,3 +1,25 @@
+//NUMBER 13 !!!
+/*
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+
+It should look like this:
+
+Sam Harris => S.H
+
+patrick feeney => P.F
+
+*/
+
+//MY SOULUTION
+function abbrevName(name){
+
+return `${name[0].toUpperCase()}.${name[name.indexOf(' ') + 1].toUpperCase()}`
+
+}
+
+
 //NUMBER 12 !!!
 /*
 Given a string of digits, you should replace any digit below 5 with '0' 
