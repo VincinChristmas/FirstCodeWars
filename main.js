@@ -1,3 +1,24 @@
+//NUMBER 14 !!!
+
+/*
+Write a function to split a string and convert it into an array of words.
+
+Examples (Input ==> Output):
+"Robin Singh" ==> ["Robin", "Singh"]
+
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+*/
+
+//MY SOULUTION
+function stringToArray(string){
+
+	// code code code
+  return string.split(' ')
+
+}
+
+
 //NUMBER 13 !!!
 /*
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
