@@ -1,3 +1,156 @@
+//NUMBER 24!!!
+/*
+You need to write a function that reverses the words in a
+ given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+
+Example (Input --> Output)
+
+"Hello World" --> "World Hello"
+"Hi There." --> "There. Hi"
+
+*/
+
+
+//MY SOULUTION
+function reverse(string){
+  //your code here
+  
+    let newString = string.split(' ')
+  let output = [];
+    for (var i = newString.length - 1; i> -1; i--){
+        output.push(newString[i]);
+    }
+
+    return output.join(' ');
+
+}
+
+//NUMBER 23!!!
+/*
+The company you work for has just been awarded a contract to build a 
+payment gateway. In order to help move things along, you have volunteered to 
+create a function that will take a float and return the amount formatting in dollars and cents.
+
+39.99 becomes $39.99
+
+The rest of your team will make sure that the argument 
+is sanitized before being passed to your function although you will need to account 
+for adding trailing zeros if they are missing (though you won't have to worry about a dangling period).
+
+Examples:
+
+3 needs to become $3.00
+
+3.1 needs to become $3.10
+
+
+*/
+
+
+//MY SOULUTION
+function formatMoney(amount){
+  // your formatting code here
+  let newSum = amount.toFixed(2)
+  return `${'$'}${newSum}`
+  
+}
+
+//NUMBER 22!!!
+/*
+
+Write a function which removes from string all non-digit characters 
+and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
+
+Function:
+
+getNumberFromString(s)
+
+*/
+
+
+//MY SOULUTION
+function getNumberFromString(s) {
+  let thisIsNum = [] 
+  for (let i = 0; i <= s.length; i++) {
+    if (!isNaN(parseInt(s[i]))) {
+        thisIsNum.push(s[i])
+        }
+  
+
+}
+  return parseInt(thisIsNum.join(''))
+}
+
+
+//NUMBER 21!!!
+/*
+There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A) 
+it is a 400 foot tall beast from the paleolithic era; B) it will ask you for tree fiddy.
+
+Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase 
+"tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a 
+solution for finding The Loch Ness Monster. Note that the phrase can also be written as "3.50" or 
+"three fifty". Your function should return true if you're talking with The Loch Ness Moster, false otherwise.
+
+
+*/
+
+
+//MY SOULUTION
+
+function isLockNessMonster(s) {
+  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+  if (s.includes("3.50")  || s.includes("three fifty") || s.includes("tree fiddy") ){
+    return true
+  } else {
+    return false
+  }
+}
+
+//NUMBER 20!!!
+/*
+Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+*/
+
+
+//MY SOULUTION
+function removeExclamationMarks(s) {
+  let newString = s.split('')
+  let newArr = [];
+  for (let i = 0; i <= newString.length; i++) {
+    if (newString[i] !== '!') {
+      newArr.push(newString[i])
+    }
+  }
+  return newArr.join('')
+}
+
+//NUMBER 19!!!
+
+/*
+You will be given an array a and a value x. All you need to do 
+is check whether the provided array contains the value.
+
+Array can contain numbers or strings. X can be either.
+
+Return true if the array contains the value, false if not.
+
+*/
+
+//MY SOULUTION
+function check(a, x) {
+  // your code here
+  if(a.includes(x)) {
+    return true
+  } else {
+    return false
+  }
+}
+
+
+
 //NUMBER 18!!!
 
 /*
