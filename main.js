@@ -1,3 +1,15 @@
+//NUMBER 27!!!
+/*
+Oh no! Timmy hasn't followed instructions very carefully and forgot how to 
+use the new String Template feature, Help Timmy with his string template so it works as he expects!
+*/
+
+//MY SOLUTION
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+
+
 //NUMBER 26!!!
 /*
 You can print your name on a billboard ad. Find out how much it will cost you. 
