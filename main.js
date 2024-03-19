@@ -1,3 +1,39 @@
+//NUMBER 29!!!
+
+/*
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+*/
+
+//MY SOLUTION
+function opposite(number) {
+  return (number * -1)
+}
+
+
+//NUMBER 28!!!
+
+/*
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+*/
+
+//MY SOLUTION
+function makeNegative(num) {
+  // Code?
+  let newSum = num * -1
+  if (Math.sign(num) == 1) {
+    return newSum
+  }
+  else if (Math.sign(num)== - 1){
+    return num
+  }
+  else {
+    return 0
+  }
+    
+}
+
+
+
 //NUMBER 27!!!
 /*
 Oh no! Timmy hasn't followed instructions very carefully and forgot how to 
