@@ -1,3 +1,172 @@
+//NUMBER 38!!!
+
+/*
+Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+Names given are always valid strings.
+*/
+
+//MY SOLUTION
+function areYouPlayingBanjo(name) {
+  // Implement me
+  if (name.startsWith("R") || name.startsWith("r")) {
+    return `${name} ${'plays banjo'}`
+  }
+    else {
+      return `${name} ${'does not play banjo'}`
+    }
+  
+  return name;
+}
+
+
+//NUMBER 37!!!
+
+/*
+Make a function that will return a greeting statement that uses an input; 
+your program should return, "Hello, <name> how are you doing today?".
+[Make sure you type the exact thing I wrote or the program may not execute properly]
+
+*/
+
+//MY SOLUTION
+function greet(name){
+  return `${"Hello,"} ${name} ${"how are you doing today?"}`
+}
+
+
+
+//NUMBER 36!!!
+
+/*
+In this kata you will create a function that takes in a list and returns a list with the reverse order.
+
+Examples (Input -> Output)
+* [1, 2, 3, 4]  -> [4, 3, 2, 1]
+* [9, 2, 0, 7]  -> [7, 0, 2, 9]
+*/
+
+//MY SOLUTION
+function reverseList(list) {
+  let newList = [];
+    for(let i = list.length - 1; i >= 0; i--){
+      newList.push(list[i]);
+  }
+    return newList
+  }
+
+
+//NUMBER 35!!!
+
+/*
+Make a simple function called greet that returns the most-famous "hello world!".
+
+Style Points
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" 
+you can think of? What is a "hello world" solution you would want to show your friends?
+*/
+
+//MY SOLUTION
+function greet() {
+  return "hello world!"
+}
+
+
+
+//NUMBER 34!!!
+
+/*
+The cockroach is one of the fastest insects. Write a function which takes its speed in km per 
+hour and returns it in cm per second, rounded down to the integer (= floored). For example:
+
+1.08 --> 30
+Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+
+*/
+
+//MY SOLUTION
+function cockroachSpeed(s) {
+  //Good Luck!
+  return Math.floor(s * 27.7778)
+}
+
+
+
+//NUMBER 33!!!
+
+/*
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+
+*/
+
+//MY SOLUTION
+function greet (name, owner) {
+  if (name === owner) {
+    return `Hello boss`
+  } else {
+    return `Hello guest`
+  }
+}
+
+//NUMBER 32!!!
+
+/*
+Write a function which converts the input string to uppercase.
+
+*/
+
+
+//MY SOLUTION
+function makeUpperCase(str) {
+  // Code here
+  return str.toUpperCase()
+}
+
+
+//NUMBER 31!!!
+
+/*
+You're writing code to control your town's traffic lights. 
+You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+Complete the function that takes a string as an argument representing the current state of 
+the light and returns a string representing the state the light should change to.
+
+For example, when the input is green, output should be yellow.
+
+*/
+
+
+//MY SOLUTION
+function updateLight(current) {
+  
+  //take astring
+  //anazlyze and convert the string
+  //return the new string
+  if(current == "red") {
+    return "green"
+  }
+  if (current == "yellow") {
+    return "red"
+  }
+  if (current == "green") {
+    return "yellow"
+  }
+  
+  }
+
+
 //NUMBER 30!!!
 
 /*
@@ -30,7 +199,8 @@ function solution(a, b){
 //NUMBER 29!!!
 
 /*
-Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+Very simple, given a number (integer / decimal / both depending on the language), 
+find its opposite (additive inverse).
 */
 
 //MY SOLUTION
@@ -42,7 +212,8 @@ function opposite(number) {
 //NUMBER 28!!!
 
 /*
-In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+In this simple assignment you are given a number and have to make it negative. But maybe the number is 
+already negative?
 */
 
 //MY SOLUTION
@@ -519,9 +690,11 @@ function well(x){
 /*
 //Simple Comparison?
 Write a function that will compare two values, one will be a number and one will be a string. 
-Return true if they are the same character (regardless of their different data types) and return false if they are not.
+Return true if they are the same character (regardless of their different data types) and return false if they 
+are not.
 
-To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built
+To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the 
+built
  in methods including .toString(), .join(), .split(), parseInt and .Number().
 */
 //MY SOLUTION
@@ -607,9 +780,11 @@ It is easy to join two strings together like this string1 + string2.
 
 Another way to get the desired result would be with string1.concat(string2)
 
-ES6 has introduced another way of joining strings. Your task is to find out what this is and write a function that will add two strings together, there must be a space between the two strings.
+ES6 has introduced another way of joining strings. Your task is to find out what this is and write a 
+function that will add two strings together, there must be a space between the two strings.
 
-+ , .concat() & .join() will not be allowed in this exercise. I have also removed some other methods that can be used to cheat!
++ , .concat() & .join() will not be allowed in this exercise. I have also removed some other 
+methods that can be used to cheat!
 
 If one of the arguments is a number your code must coerce it into being a string.
 
@@ -651,17 +826,15 @@ function whoIsPaying(name){
 }
 
 
-
-
-
-
-
 // NUMBER FOUR!!!!!!
 //This is an 8kyu kata problem
 /*
-Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
+Your coworker was supposed to write a simple helper function to capitalize a string 
+(that contains a single word) before they went on vacation.
 
-Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).
+Unfortunately, they have now left and the code they gave you doesn't work. 
+Fix the helper function they wrote so that it works as intended 
+(i.e. it must make the first character in the string upper case).
 
 The string will always start with a letter and will never be empty.
 
@@ -740,7 +913,8 @@ function boolToWord( bool ){
 //Beginner Series #1 School Paperwork
 
 /*
-Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+Your classmates asked you to copy some paperwork for them. You know that there are 'n' 
+classmates and the paperwork has 'm' pages.
 
 Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
 
