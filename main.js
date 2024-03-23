@@ -1,3 +1,137 @@
+//NUMBER 44!!!
+
+/*
+Complete the solution so that it reverses all of the words within the string passed in.
+
+Words are separated by exactly one space and there are no leading or trailing spaces.
+
+Example(Input --> Output):
+
+"The greatest victory is that which requires no battle" --> 
+"battle no requires which that is victory greatest The"
+*/
+
+//MY SOLUTION
+function reverseWords(str){
+  return str.split(' ').reverse().join(' '); // reverse those words
+}
+
+//NUMBER 43!!!
+
+/*
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems.
+ It is composed of four 
+nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. 
+RNA differs slightly from DNA its chemical structure and contains no Thymine.
+ In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+
+For example:
+
+"GCAT"  =>  "GCAU"
+The input string can be of arbitrary length - in particular, it may be empty. 
+All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+*/
+
+//MY SOLUTION
+
+function DNAtoRNA(dna) {
+  let newDNA = dna.split('')
+  for (let i = 0; i < newDNA.length; i++) {
+    if (newDNA[i] === "T") {
+      newDNA[i] = "U"
+    }
+  }
+  return newDNA.join('')
+}
+
+
+//NUMBER 42!!!
+
+/*
+Write a function that returns a string in which firstname is swapped with last name.
+
+Example(Input --> Output)
+
+"john McClane" --> "McClane john"
+*/
+
+//MY SOLUTION
+function nameShuffler(str){
+  let newStr = str.split(' ')
+  return newStr.reverse().join(' ')
+  
+}
+
+
+//NUMBER 41!!!
+
+/*
+Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+
+Examples
+"hello"     -->  "hll"
+"codewars"  -->  "cdwrs"
+"goodbye"   -->  "gdby"
+"HELLO"     -->  "HELLO"
+don't worry about uppercase vowels
+y is not considered a vowel for this kata
+*/
+
+//MY SOLUTION
+function shortcut (string) {
+  let nonVowels = [];
+  let prepared = string.split('');
+  for (let i = 0; i <= prepared.length; i++) {
+    if (prepared[i] !== 'a' && prepared[i] !== 'e' && prepared[i] !== 'i' && 
+       prepared[i] !== 'o' && prepared[i] !== 'u') {
+       nonVowels.push(prepared[i])
+    }
+  }
+    return nonVowels.join('')
+}
+
+//NUMBER 40!!!
+
+/*
+It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... 
+but who is going to make the most money?
+
+Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+
+If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did 
+not make enough money and must receive only his stated salary.
+
+Return the total figure the individual will receive as a string prefixed with 
+"£" (= "\u00A3", JS, Go, Java, Scala, and Julia), 
+"$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell, and Lua) or "¥" (Rust).
+*/
+
+//MY SOLUTION
+function bonusTime(salary, bonus) {
+  // your code here
+    return `${"£"}${(bonus === true) ? (String(salary * 10)) : (String(salary))}`
+    }
+
+//NUMBER 39!!!
+
+/*
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+*/
+
+//MY SOLUTION
+function booleanToString(b) {
+  //your code here
+  return String(b)
+}
+
+
+
 //NUMBER 38!!!
 
 /*
