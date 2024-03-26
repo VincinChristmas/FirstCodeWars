@@ -1,3 +1,161 @@
+//NUMBER 50!!!
+
+/*
+Your task is to sum the differences between consecutive pairs in the array in descending order.
+
+Example
+[2, 1, 10]  -->  9
+In descending order: [10, 2, 1]
+
+Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+
+If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
+*/
+
+//MY SOLUTION
+function sumOfDifferences(arr) {
+  if (arr.length <= 1) {
+    return 0;
+  }
+  
+  arr.sort((a, b) => b - a); // Sort the array in descending order
+  let sum = 0;
+  
+  for (let i = 0; i < arr.length - 1; i++) {
+    sum += arr[i] - arr[i + 1]; // Sum the differences between consecutive elements
+  }
+  
+  return sum;
+}
+
+
+//NUMBER 49!!!
+
+/*
+In this Kata we are passing a number (n) into a function.
+
+Your code will determine if the number passed is even (or not).
+
+The function needs to return either a true or false.
+
+Numbers may be positive or negative, integers or floats.
+
+Floats with decimal part non equal to zero are considered UNeven for this kata.
+*/
+
+//MY SOLUTION
+function testEven(n) {
+if (n % 2 === 0) {
+  return true
+}
+else {
+  return false
+}
+}
+
+
+//NUMBER 48!!!
+
+/*
+Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, 
+you can be sure he's not...
+
+Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+i.e.
+
+friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+*/
+
+//MY SOLUTION
+function friend(friends){
+  
+const result = friends.filter((word) => word.length == 4);
+
+return result
+  }
+
+
+//NUMBER 47!!!
+
+/*
+In this kata you will create a function that takes a list of non-negative integers and strings and 
+returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+*/
+
+//MY SOLUTION
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  let gotThisList = []
+  for (let i = 0; i < l.length; i++) {
+    if (typeof(l[i]) === "number") {
+      gotThisList.push(l[i])
+    }
+  }
+  return gotThisList
+}
+
+
+//NUMBER 46!!!
+
+/*
+Check to see if a string has the same amount of 'x's and 'o's. 
+The method must return a boolean and be case insensitive. The string can contain any char.
+
+Examples input/output:
+
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false
+*/
+
+//MY SOLUTION
+function XO(str) {
+  //code here
+let oCount = 0
+let xCount = 0
+let newStr = str.toLowerCase()
+for (let i = 0; i <= str.length; i++) {
+    if (newStr[i]=== 'o') {
+        oCount++
+    }
+    if (newStr[i] === 'x') {
+        xCount++
+    }
+    
+}
+  if (xCount === oCount) {
+      return true
+  }
+  else {
+      return false
+  }
+}
+
+//NUMBER 45!!!
+
+/*
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+*/
+
+//MY SOLUTION
+
+function solution(str){
+  return str.split('').reverse().join('')
+}
+
 //NUMBER 44!!!
 
 /*
