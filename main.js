@@ -1,3 +1,30 @@
+//NUMBER 62!!!
+
+/*
+Teach snoopy and scooby doo how to bark using object methods.
+ Currently only snoopy can bark and not scooby doo.
+
+snoopy.bark(); // return "Woof"
+scoobydoo.bark(); // undefined
+*/
+
+//MY SOLUTION
+function Dog (breed) {
+  this.breed = breed;
+}
+
+var snoopy = new Dog("Beagle");
+
+snoopy.bark = function() {
+  return "Woof";
+};
+
+var scoobydoo = new Dog("Great Dane");
+
+scoobydoo.bark = function() {
+  return "Woof";
+};
+
 //NUMBER 61!!!
 
 /*
