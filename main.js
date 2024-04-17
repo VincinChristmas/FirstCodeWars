@@ -1,3 +1,54 @@
+//NUMBER 64!!!
+
+/*
+VVhat ?!?
+
+None of zese codevarriors seemz to remember hiz ovvn name !
+
+Kould you help ?
+
+var albert = new Warrior("Al")
+var boris  = new Warrior("Boris")
+
+albert.toString() --> "Hi! my name's Boris" <-- ohoh..
+*/
+
+//MY SOLUTION
+function Warrior(n){
+  let name = n;  
+  this.name = function(n){
+    if( n ) name=n;
+    return name;
+  }
+}
+  
+Warrior.prototype.toString = function(){
+    return "Hi! my name's "+this.name();
+}
+//NUMBER 63!!!
+
+/*
+Color Ghost
+Create a class Ghost
+
+Ghost objects are instantiated without any arguments.
+
+Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
+
+ghost = new Ghost();
+ghost.color //=> "white" or "yellow" or "purple" or "red"
+*/
+
+//MY SOLUTION
+class Ghost {
+  // your code goes here
+  constructor(color) {
+    const colors = ["white", "yellow", "purple", "red"];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+  
+};
+
 //NUMBER 62!!!
 
 /*
