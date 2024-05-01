@@ -1,3 +1,21 @@
+//NUMBER 82!!!
+
+/*
+https://www.codewars.com/kata/56fc55cd1f5a93d68a001d4e/javascript
+*/
+
+//MY SOLUTION
+function stairsIn20(s){
+  //your code here
+  let sum = 0
+  s.forEach(arr => {
+    arr.forEach(stair => {
+      sum = sum + stair 
+    })
+  })
+  return sum * 20
+}
+
 //NUMBER 81!!!
 
 /*
