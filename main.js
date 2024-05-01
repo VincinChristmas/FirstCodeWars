@@ -1,3 +1,24 @@
+//NUMBER 85!!!
+
+/*
+Input: Array of elements
+
+["h","o","l","a"]
+
+Output: String with comma delimited elements of the array in th same order.
+
+"h,o,l,a"
+*/
+
+//MY SOLUTION
+function printArray(array){
+  let newArray = []
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(array[i])
+  }
+  return newArray
+}
+
 //NUMBER 84!!!
 
 /*
