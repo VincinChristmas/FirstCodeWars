@@ -1,3 +1,18 @@
+//NUMBER 86!!!
+
+/*
+You are trying to put a hash in ruby or an object in javascript or java into an array, 
+but it always returns error, solve it and keep it as simple as possible!
+*/
+
+//MY SOLUTION
+items = []
+let newObj = {}
+newObj.a = "b"
+newObj.c = "d"
+
+items.push(newObj)
+
 //NUMBER 85!!!
 
 /*
